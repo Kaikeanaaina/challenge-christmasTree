@@ -17,11 +17,11 @@ function christmasTree(height){
     lau.innerHTML = '0';
     document.getElementById('container').appendChild(lau);
 
-      var arrayOfZero = ['0'];
+      var arrayOfZero = ['-^- 0'];
 
     for(var i = 1 ; i < height ; i++){
 
-      arrayOfZero.push('00');
+      arrayOfZero.push('00'," -^- ");
       var set = arrayOfZero.join('');
       var leaf = document.createElement('p');
       leaf.className = 'leaf';
@@ -36,10 +36,10 @@ function christmasTree(height){
 
   var stump = document.createElement('p');
   stump.id = 'stump';
-  stump.innerHTML = '||';
+  stump.innerHTML = '# ...... * ..... # .... * ... |_| ....... # ...... * ..... #....';
   document.getElementById('container').appendChild(stump);
 
 
 }
 
-christmasTree(6);
+christmasTree(10);
